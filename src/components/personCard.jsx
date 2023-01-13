@@ -18,12 +18,12 @@ class PersonCard extends Component {
   render() { 
     const { firstName, lastName, hairColor} = this.props.info;
     return (
-      <>
+      <div className="card">
         <h1>{lastName}, {firstName}</h1>
         <p>Age: {this.state.age}</p>
         <p>Hair Color: {hairColor}</p>
         <button onClick={this.addYear}>{firstName} {lastName} Bithday Button</button>
-      </>
+      </div>
     );
   }
 }
